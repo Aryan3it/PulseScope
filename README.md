@@ -85,7 +85,7 @@ data/warehouse/pulsescope.db/   events · users · sessions · orders · daily_k
 Requires Python 3.10+, Java 8/11/17 (Spark and H2O), and R ≥ 4 with `dplyr`, `jsonlite`, `boot`. Docker is optional (MongoDB).
 
 ```bash
-make setup                 # venv + requirements
+make setup                 # venv+requirements
 make mongo                 # optional: MongoDB in Docker
 make all                   # simulate → etl → analytics → segment → churn → experiments → rca → R → nosql → report
 make all USERS=20000       # smaller/faster run
